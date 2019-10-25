@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+		  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+		  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="layout.tiles" template="/WEB-INF/views/layout/baseLayout.jsp">
+		<put-attribute name="tile" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"></put-attribute>
+	</definition>
+	<!-- ** Animal ** -->
+	<definition  name="animal.adicionar.tiles" extends="layout.tiles" >
+		<put-attribute name="title" value="Cadastrar Pet"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/animal/adicionar.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="animal.alterar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Edição de Cadastro"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/animal/alterar.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="animal.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Lista de Pets"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/animal/listar.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Prontuario ** -->
+	<definition  name="prontuario.adicionar.tiles" extends="layout.tiles" >
+		<put-attribute name="title" value="Cadastrar Prontuários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/prontuarios/adicionar.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="prontuario.alterar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Edição de Prontuários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/prontuarios/alterar.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="prontuario.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Lista de prontuários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/prontuarios/listar.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Veterinário ** -->
+	<definition  name="veterinario.adicionar.tiles" extends="layout.tiles" >
+		<put-attribute name="title" value="Cadastrar Veterinários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/veterinarios/adicionar.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="veterinario.alterar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Editar Veterinário"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/veterinarios/alterar.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="veterinario.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Veterinários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/veterinarios/listar.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Usuários ** -->
+	<definition  name="usuarios.adicionar.tiles" extends="layout.tiles" >
+		<put-attribute name="title" value="Cadastrar Usuários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/adicionar.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="usuarios.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Usuários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/listar.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Login ** -->
+	<definition  name="home.login.tiles" extends="layout.tiles" >
+		<put-attribute name="title" value="Nascimento Veterinários: Login"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home/login.jsp"></put-attribute>
+	</definition>
+	
+	<definition  name="home.bemvindo.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Nascimento Veterinarios: Bem-Vindo!"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home/bemVindo.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>
